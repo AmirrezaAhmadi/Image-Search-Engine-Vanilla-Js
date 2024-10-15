@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search Engine</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Image Search</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for images...">
+            <button id="searchBtn">Search</button>
+        </div>
+    </header>
+    
+    <main>
+        <div id="imageResults" class="image-grid"></div>
+        <div class="pagination-controls">
+            <button id="moreBtn" style="display: none;">More</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Powered by AmirrezaAhmadi</p>
+    </footer>
+
+    <script type="module" src="assets/javascript/config.js"></script>
+    <script type="module" src="assets/javascript/script.js"></script>
+</body>
+</html>
