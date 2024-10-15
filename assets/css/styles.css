@@ -36,13 +36,6 @@ h1 {
     margin-right: 20px;
 }
 
-.search-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-}
-
 #searchInput {
     padding: 15px 80px;
     width: 80%;
@@ -62,7 +55,7 @@ h1 {
     background-color: #1a73e8;
     color: white;
     border: none;
-    padding: 15px 25px;
+    padding: 15px 5px;
     font-size: 1.2rem;
     font-weight: 500;
     border-radius: 0 50px 50px 0;
@@ -136,3 +129,54 @@ footer {
 footer p {
     margin: 0;
 }
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-container input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 50px 0 0 50px;
+    border: 1px solid #ccc;
+    border-right: none;
+    background-color: #e9f1fe;
+    box-sizing: border-box;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 0 50px 50px 0;
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .search-container input[type="text"] {
+        width: 70%;
+        font-size: 14px;
+    }
+
+    .search-container button {
+        width: 30%;
+        font-size: 14px;
+    }
+
+    .search-container {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
